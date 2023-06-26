@@ -1,0 +1,999 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://www.EconomicField.com#> .
+
+<http://www.EconomicField.com>
+  a owl:Ontology ;
+  rdfs:comment "This is an Intelligent Tutoring System based on the Field of Economics Ontology"@en .
+
+<http://www.EconomicField.com#only> a owl:AnnotationProperty .
+<http://www.EconomicField.com#a_type_of> a owl:ObjectProperty .
+<http://www.EconomicField.com#as>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#belongs_to> a owl:ObjectProperty .
+<http://www.EconomicField.com#branches_of_economics>
+  a owl:ObjectProperty ;
+  owl:equivalentProperty <http://www.EconomicField.com#is_a_branch_of> ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  owl:inverseOf <http://www.EconomicField.com#branches_of_economics>, <http://www.EconomicField.com#is_a_branch_of> ;
+  rdfs:domain <http://www.EconomicField.com#Economic>, <http://www.EconomicField.com#Economics_of_nation>, <http://www.EconomicField.com#Macro_Economic>, <http://www.EconomicField.com#Micro_Economic> ;
+  rdfs:range <http://www.EconomicField.com#Economics_of_nation>, <http://www.EconomicField.com#Macro_Economic>, <http://www.EconomicField.com#Micro_Economic> .
+
+<http://www.EconomicField.com#changed_the_theory> a owl:ObjectProperty .
+<http://www.EconomicField.com#conducts> a owl:ObjectProperty .
+<http://www.EconomicField.com#controlled_by> a owl:ObjectProperty .
+<http://www.EconomicField.com#exchanged_at> a owl:ObjectProperty .
+<http://www.EconomicField.com#factors> a owl:ObjectProperty .
+<http://www.EconomicField.com#has_been_awarded> a owl:ObjectProperty .
+<http://www.EconomicField.com#has_been_awarded_to> a owl:ObjectProperty .
+<http://www.EconomicField.com#has_not_been_awarded>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#he_was_a_believer_of>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#he_was_born>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#he_was_born_in> a owl:ObjectProperty .
+<http://www.EconomicField.com#includes>
+  a owl:ObjectProperty ;
+  owl:equivalentProperty <http://www.EconomicField.com#sold_by> ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  owl:inverseOf <http://www.EconomicField.com#sells> ;
+  rdfs:domain <http://www.EconomicField.com#Market> ;
+  rdfs:range <http://www.EconomicField.com#Producers> .
+
+<http://www.EconomicField.com#is_a_branch_of>
+  a owl:ObjectProperty, owl:ReflexiveProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://www.EconomicField.com#Economics_of_nation>, <http://www.EconomicField.com#Macro_Economic>, <http://www.EconomicField.com#Micro_Economic> ;
+  rdfs:range <http://www.EconomicField.com#Economics_of_nation>, <http://www.EconomicField.com#Macro_Economic>, <http://www.EconomicField.com#Micro_Economic> .
+
+<http://www.EconomicField.com#is_an_example_of> a owl:ObjectProperty .
+<http://www.EconomicField.com#is_indicated_by> a owl:ObjectProperty .
+<http://www.EconomicField.com#is_of_origin> a owl:ObjectProperty .
+<http://www.EconomicField.com#issued_excess>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#managed_by>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#managed_through> a owl:ObjectProperty .
+<http://www.EconomicField.com#number_of_producers>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#propagated_by> a owl:ObjectProperty .
+<http://www.EconomicField.com#regulates> a owl:ObjectProperty .
+<http://www.EconomicField.com#returns> a owl:ObjectProperty .
+<http://www.EconomicField.com#returns_on_factor> a owl:ObjectProperty .
+<http://www.EconomicField.com#sells> a owl:ObjectProperty .
+<http://www.EconomicField.com#sold_by> a owl:ObjectProperty .
+<http://www.EconomicField.com#the_kind_of> a owl:ObjectProperty .
+<http://www.EconomicField.com#type_of_economist_was> a owl:ObjectProperty .
+<http://www.EconomicField.com#which_eradicated>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#work_on>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://www.EconomicField.com#IMF>
+  a owl:DatatypeProperty, owl:Class ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain <http://www.EconomicField.com#International_Organisation> ;
+  rdfs:range xsd:string ;
+  rdfs:subClassOf <http://www.EconomicField.com#International_Organisation> .
+
+<http://www.EconomicField.com#Noble_Prize>
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain <http://www.EconomicField.com#Award> .
+
+<http://www.EconomicField.com#Pounds>
+  a owl:DatatypeProperty, owl:NamedIndividual, <http://www.EconomicField.com#Legal_Tenders> ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain <http://www.EconomicField.com#Legal_Tenders> ;
+  rdfs:range xsd:integer .
+
+<http://www.EconomicField.com#RBI>
+  a owl:DatatypeProperty, owl:NamedIndividual, <http://www.EconomicField.com#Central_Bank> ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain <http://www.EconomicField.com#Central_Bank> ;
+  rdfs:range xsd:string ;
+  ns0:IMF ""^^xsd:string .
+
+ns0:WTO
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:International_Organisation ;
+  rdfs:range xsd:string .
+
+ns0:World_Bank
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:International_Organisation ;
+  rdfs:range xsd:string .
+
+ns0:clothing
+  a owl:DatatypeProperty, owl:NamedIndividual, ns0:Produce_goods_and_services ;
+  owl:equivalentProperty ns0:farming_foods, ns0:travelling ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:Produce_goods_and_services ;
+  rdfs:range xsd:string ;
+  ns0:clothing ""^^xsd:string .
+
+ns0:farming_foods
+  a owl:DatatypeProperty ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:Produce_goods_and_services ;
+  rdfs:range xsd:normalizedString .
+
+ns0:indian_rupees
+  a owl:DatatypeProperty, owl:NamedIndividual, ns0:Legal_Tenders ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:Legal_Tenders ;
+  rdfs:range xsd:integer .
+
+ns0:travelling
+  a owl:DatatypeProperty, owl:NamedIndividual, ns0:Produce_goods_and_services ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+  rdfs:domain ns0:Produce_goods_and_services ;
+  rdfs:range xsd:string .
+
+ns0:Award a owl:Class .
+ns0:Behavioural_Economist
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:British
+  a owl:Class, owl:NamedIndividual ;
+  rdfs:subClassOf ns0:Taught_course .
+
+ns0:Capital
+  a owl:Class ;
+  rdfs:subClassOf ns0:Factors_of_Production .
+
+ns0:Central_Bank
+  a owl:Class ;
+  rdfs:subClassOf ns0:Organisations .
+
+ns0:Classicals
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:Consumers
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economic_Groups ;
+  owl:disjointWith ns0:Legal_Tenders, ns0:Produce_goods_and_services, ns0:Producers .
+
+ns0:Country a owl:Class .
+ns0:Definition
+  a owl:Class ;
+  rdfs:subClassOf ns0:Inflation .
+
+ns0:Economic a owl:Class .
+ns0:Economic_Groups
+  a owl:Class ;
+  rdfs:subClassOf ns0:Micro_Economic .
+
+ns0:Economics_of_nation
+  a owl:Class ;
+  owl:equivalentClass ns0:Macro_Economic ;
+  rdfs:subClassOf ns0:Economic .
+
+ns0:Economist a owl:Class .
+ns0:England
+  a owl:Class, owl:NamedIndividual ;
+  rdfs:subClassOf ns0:Country ;
+  owl:sameAs ns0:John_Maynard_Keynes .
+
+ns0:Enterpreneurship
+  a owl:Class ;
+  rdfs:subClassOf ns0:Factors_of_Production .
+
+ns0:Experimental
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid3
+     _:genid5
+   )
+  ] ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:Factors_of_Production
+  a owl:Class ;
+  rdfs:subClassOf ns0:Micro_Economic .
+
+ns0:Finance
+  a owl:Class ;
+  rdfs:subClassOf ns0:Works .
+
+ns0:Financial
+  a owl:Class ;
+  owl:equivalentClass [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid9
+     _:genid11
+   )
+  ] ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:Fiscal_Policy
+  a owl:Class ;
+  rdfs:subClassOf ns0:Policies_of_economic ;
+  owl:disjointWith ns0:Monetary_Policy .
+
+ns0:Government_Expenditure
+  a owl:Class ;
+  owl:equivalentClass ns0:Taxation ;
+  rdfs:subClassOf ns0:Fiscal_Policy .
+
+ns0:Indian_Economist
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:Inflation
+  a owl:Class ;
+  rdfs:subClassOf ns0:Issues .
+
+ns0:International_Organisation
+  a owl:Class ;
+  rdfs:subClassOf ns0:Organisations .
+
+ns0:Issues
+  a owl:Class ;
+  rdfs:subClassOf ns0:Macro_Economic .
+
+ns0:Keynesians
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economist .
+
+ns0:Labour
+  a owl:Class ;
+  rdfs:subClassOf ns0:Factors_of_Production .
+
+ns0:Labour_Services
+  a owl:Class ;
+  rdfs:subClassOf ns0:Consumers .
+
+ns0:Land
+  a owl:Class ;
+  rdfs:subClassOf ns0:Factors_of_Production .
+
+ns0:Legal_Tenders
+  a owl:Class ;
+  rdfs:subClassOf ns0:Producers .
+
+ns0:Macro_Economic
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economic .
+
+ns0:Market a owl:Class .
+ns0:Meaning
+  a owl:Class ;
+  rdfs:subClassOf ns0:Unemployment .
+
+ns0:Micro_Economic
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economic .
+
+ns0:Monetary_Policy
+  a owl:Class ;
+  rdfs:subClassOf ns0:Policies_of_economic ;
+  owl:disjointWith ns0:trade_policy .
+
+ns0:Money_Supply
+  a owl:Class ;
+  owl:equivalentClass ns0:Rate_of_interest ;
+  rdfs:subClassOf ns0:Monetary_Policy .
+
+ns0:Monopolistic_Competition
+  a owl:Class ;
+  rdfs:subClassOf ns0:Market .
+
+ns0:Monopoly
+  a owl:Class ;
+  rdfs:subClassOf ns0:Market .
+
+ns0:Monopsony
+  a owl:Class ;
+  rdfs:subClassOf ns0:Market .
+
+ns0:Nobel_Prize
+  a owl:Class ;
+  rdfs:subClassOf ns0:Award .
+
+ns0:Oligopoly
+  a owl:Class ;
+  rdfs:subClassOf ns0:Market .
+
+ns0:Organisations a owl:Class .
+ns0:Pay_Taxes
+  a owl:Class ;
+  rdfs:subClassOf ns0:Consumers .
+
+ns0:Perfect_Market
+  a owl:Class ;
+  rdfs:subClassOf ns0:Market .
+
+ns0:Policies_of_economic a owl:Class .
+ns0:Political_British
+  a owl:Class, owl:NamedIndividual ;
+  rdfs:subClassOf ns0:Taught_course .
+
+ns0:Produce_goods_and_services
+  a owl:Class ;
+  rdfs:subClassOf ns0:Producers .
+
+ns0:Producers
+  a owl:Class ;
+  rdfs:subClassOf ns0:Economic_Groups .
+
+ns0:Psychology
+  a owl:Class ;
+  rdfs:subClassOf ns0:Works .
+
+ns0:Rate_of_interest
+  a owl:Class ;
+  rdfs:subClassOf ns0:Monetary_Policy .
+
+ns0:Scottish
+  a owl:Class ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:Taught_course a owl:Class .
+ns0:Taxation
+  a owl:Class ;
+  rdfs:subClassOf ns0:Fiscal_Policy .
+
+ns0:Types_of_Unemployment
+  a owl:Class ;
+  rdfs:subClassOf ns0:Unemployment .
+
+ns0:Types_of_inflation
+  a owl:Class ;
+  rdfs:subClassOf ns0:Inflation .
+
+ns0:Unemployment
+  a owl:Class ;
+  rdfs:subClassOf ns0:Issues .
+
+ns0:Venezuela
+  a owl:Class, owl:NamedIndividual, ns0:Country ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:Works a owl:Class .
+ns0:World_Trade_Organisation
+  a owl:Class ;
+  rdfs:subClassOf ns0:International_Organisation .
+
+ns0:currency_restriction
+  a owl:Class, owl:NamedIndividual ;
+  owl:equivalentClass ns0:exchange_rate ;
+  rdfs:subClassOf ns0:trade_policy .
+
+ns0:economics
+  a owl:Class ;
+  rdfs:subClassOf ns0:Works .
+
+ns0:exchange_rate
+  a owl:Class ;
+  rdfs:subClassOf ns0:trade_policy .
+
+ns0:india
+  a owl:Class, owl:NamedIndividual ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:indian_american
+  a owl:Class ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:iran
+  a owl:Class ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:iraq
+  a owl:Class ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:saudi_arabia
+  a owl:Class ;
+  rdfs:subClassOf ns0:Country .
+
+ns0:social_experiments
+  a owl:Class ;
+  rdfs:subClassOf ns0:Works .
+
+ns0:trade_policy
+  a owl:Class ;
+  rdfs:subClassOf ns0:Policies_of_economic .
+
+ns0:world_bank
+  a owl:Class, owl:NamedIndividual, ns0:International_Organisation ;
+  rdfs:subClassOf ns0:International_Organisation ;
+  ns0:World_Bank ""^^xsd:string .
+
+ns0:Abhijit_Banerjee
+  a owl:NamedIndividual, ns0:Experimental, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid15
+   )
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:is_of_origin ;
+    owl:allValuesFrom ns0:india
+  ] ;
+  ns0:is_of_origin ns0:india ;
+  ns0:work_on ns0:Economics .
+
+ns0:Adam_Smith a owl:NamedIndividual, ns0:Classicals, ns0:Economist .
+ns0:Bank_of_England
+  a owl:NamedIndividual, ns0:Inflation ;
+  owl:sameAs ns0:banknote ;
+  ns0:issued_excess ns0:banknote ;
+  ns0:which_eradicated ns0:inflation .
+
+ns0:Daniel_Kahneman a owl:NamedIndividual .
+ns0:David_Ricardo
+  a owl:NamedIndividual, ns0:Classicals, ns0:Economist ;
+  owl:sameAs ns0:England ;
+  ns0:he_was_a_believer_of ns0:monetarism .
+
+ns0:Economics a owl:NamedIndividual .
+ns0:Exchange_rates_modification
+  a owl:NamedIndividual, ns0:Policies_of_economic, ns0:exchange_rate, [
+    a owl:Class ;
+    owl:intersectionOf (
+     _:genid19
+     _:genid22
+   )
+  ], [
+    a owl:Class ;
+    owl:complementOf [
+      a owl:Restriction ;
+      owl:onProperty ns0:a_type_of ;
+      owl:allValuesFrom ns0:currency_restriction
+    ]
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:controlled_by ;
+    owl:someValuesFrom ns0:International_Organisation
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:managed_by ;
+    owl:allValuesFrom ns0:International_Organisation
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:managed_through ;
+    owl:allValuesFrom [
+      a owl:Class ;
+      owl:oneOf ( ns0:Exchange_rates_modification )
+    ]
+  ] ;
+  ns0:a_type_of ns0:currency_restriction ;
+  ns0:controlled_by ns0:imf, ns0:world_bank, ns0:world_trade_organisation ;
+  ns0:is_an_example_of ns0:policies_of_economic ;
+  ns0:managed_by ns0:imf, ns0:world_bank, ns0:world_trade_organisation ;
+  ns0:managed_through ns0:Exchange_rates_modification .
+
+ns0:Gita_Gopinath
+  a owl:NamedIndividual, ns0:Economist, ns0:Financial, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid33
+   )
+  ], [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid37
+   )
+  ] ;
+  ns0:has_not_been_awarded ns0:nobel_prize ;
+  ns0:is_of_origin ns0:Indian_American ;
+  ns0:work_on ns0:Macro_Economics, ns0:international_finance .
+
+ns0:Indian_American a owl:NamedIndividual .
+ns0:Iran a owl:NamedIndividual, ns0:Country .
+ns0:Iraq a owl:NamedIndividual, ns0:Country .
+ns0:John_Maynard_Keynes
+  a owl:NamedIndividual, ns0:British, ns0:Economist, ns0:England, ns0:Keynesians, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid44
+   )
+  ], [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid48
+   )
+  ], [
+    a owl:Class ;
+    owl:intersectionOf (
+     _:genid53
+     _:genid55
+   )
+  ] ;
+  ns0:changed_the_theory ns0:Macro_Economics, ns0:policies_of_economic ;
+  ns0:has_not_been_awarded ns0:nobel_prize ;
+  ns0:he_was_born_in ns0:England ;
+  ns0:type_of_economist_was ns0:British ;
+  ns0:work_on ns0:Economics .
+
+ns0:Kuwait a owl:NamedIndividual .
+ns0:Loan_Rate_Granted_by_Bank a owl:NamedIndividual .
+ns0:Macro_Economics a owl:NamedIndividual, ns0:Economics_of_nation, ns0:Macro_Economic .
+ns0:OPEC
+  a owl:NamedIndividual, ns0:Oligopoly, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Market
+     _:genid59
+   )
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:sold_by ;
+    owl:allValuesFrom [
+      a owl:Class ;
+      owl:oneOf (
+       ns0:Iran
+       ns0:Iraq
+       ns0:Qatar
+       ns0:Saudi_Arabia
+       ns0:Venezuela
+     )
+    ]
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:the_kind_of ;
+    owl:allValuesFrom ns0:Oligopoly
+  ] ;
+  ns0:includes ns0:Iran, ns0:Iraq, ns0:Qatar, ns0:Saudi_Arabia, ns0:Venezuela ;
+  ns0:sold_by ns0:Iran, ns0:Iraq, ns0:Qatar, ns0:Saudi_Arabia, ns0:Venezuela .
+
+ns0:Qatar a owl:NamedIndividual, ns0:Country .
+ns0:Raghuram_Rajan
+  a owl:NamedIndividual, ns0:Economist, ns0:Financial, ns0:Indian_Economist, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid71
+   )
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:is_of_origin ;
+    owl:allValuesFrom ns0:india
+  ] ;
+  ns0:is_of_origin ns0:india ;
+  ns0:work_on ns0:Economics, ns0:Macro_Economics, ns0:finance .
+
+ns0:Richard_Thaler
+  a owl:NamedIndividual, ns0:Behavioural_Economist, ns0:Financial, ns0:Nobel_Prize, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid81
+   )
+  ], [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Economist
+     _:genid85
+   )
+  ] ;
+  ns0:has_been_awarded ns0:nobel_prize ;
+  ns0:work_on ns0:Economics, ns0:finance, ns0:psychology ;
+  ns0:Noble_Prize ""^^xsd:string .
+
+ns0:Saudi_Arabia a owl:NamedIndividual, ns0:Country .
+ns0:William_Blake a owl:NamedIndividual, ns0:Classicals .
+ns0:banknote a owl:NamedIndividual .
+ns0:consumer a owl:NamedIndividual, ns0:Consumers .
+ns0:farming_food a owl:NamedIndividual, ns0:Produce_goods_and_services .
+ns0:finance a owl:NamedIndividual .
+ns0:food_market
+  a owl:NamedIndividual, ns0:Perfect_Market, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Market
+     _:genid93
+   )
+  ], [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Perfect_Market
+     _:genid97
+   )
+  ] ;
+  ns0:includes ns0:vendors ;
+  ns0:sold_by ns0:vendors .
+
+ns0:imf
+  a owl:NamedIndividual, ns0:International_Organisation ;
+  ns0:IMF ""^^xsd:string .
+
+ns0:import_and_export_taxes
+  a owl:NamedIndividual, [
+    a owl:Restriction ;
+    owl:onProperty ns0:controlled_by ;
+    owl:someValuesFrom ns0:International_Organisation
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:managed_through ;
+    owl:allValuesFrom [
+      a owl:Class ;
+      owl:oneOf ( ns0:import_and_export_taxes )
+    ]
+  ] ;
+  ns0:controlled_by ns0:imf, ns0:world_bank, ns0:world_trade_organisation ;
+  ns0:managed_by ns0:imf, ns0:world_bank, ns0:world_trade_organisation ;
+  ns0:managed_through ns0:import_and_export_taxes .
+
+ns0:indian_government a owl:NamedIndividual .
+ns0:indian_railways
+  a owl:NamedIndividual, ns0:Monopoly, [
+    a owl:Class ;
+    owl:intersectionOf (
+     ns0:Monopoly
+     _:genid107
+   )
+  ], [
+    a owl:Restriction ;
+    owl:onProperty ns0:the_kind_of ;
+    owl:allValuesFrom ns0:Monopoly
+  ] ;
+  ns0:includes ns0:indian_government ;
+  ns0:sold_by ns0:indian_government .
+
+ns0:inflation a owl:NamedIndividual .
+ns0:international_finance a owl:NamedIndividual .
+ns0:monetarism a owl:NamedIndividual .
+ns0:nobel_prize a owl:NamedIndividual .
+ns0:policies_of_economic a owl:NamedIndividual .
+ns0:psychology a owl:NamedIndividual .
+ns0:taka a owl:NamedIndividual, ns0:Legal_Tenders .
+ns0:vendors a owl:NamedIndividual .
+ns0:world_trade_organisation
+  a owl:NamedIndividual, ns0:International_Organisation ;
+  ns0:WTO ""^^xsd:string .
+
+_:genid3
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom ns0:economics .
+
+_:genid5
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom ns0:social_experiments .
+
+_:genid9
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom ns0:Finance .
+
+_:genid11
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom ns0:economics .
+
+_:genid15
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:allValuesFrom ns0:Economic .
+
+_:genid19
+  a owl:Class ;
+  owl:complementOf [
+    a owl:Restriction ;
+    owl:onProperty ns0:a_type_of ;
+    owl:allValuesFrom ns0:currency_restriction
+  ] .
+
+_:genid22
+  a owl:Restriction ;
+  owl:onProperty ns0:is_an_example_of ;
+  owl:someValuesFrom ns0:Policies_of_economic .
+
+_:genid33
+  a owl:Restriction ;
+  owl:onProperty ns0:has_not_been_awarded ;
+  owl:someValuesFrom ns0:Nobel_Prize .
+
+_:genid37
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom [
+    a owl:Class ;
+    owl:oneOf (
+     ns0:Macro_Economics
+     ns0:international_finance
+   )
+  ] .
+
+_:genid44
+  a owl:Restriction ;
+  owl:onProperty ns0:has_not_been_awarded ;
+  owl:someValuesFrom ns0:Nobel_Prize .
+
+_:genid48
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:allValuesFrom [
+    a owl:Class ;
+    owl:oneOf ( ns0:Economics )
+  ] .
+
+_:genid53
+  a owl:Restriction ;
+  owl:onProperty ns0:he_was_born_in ;
+  owl:allValuesFrom ns0:England .
+
+_:genid55
+  a owl:Restriction ;
+  owl:onProperty ns0:type_of_economist_was ;
+  owl:allValuesFrom ns0:British .
+
+_:genid59
+  a owl:Restriction ;
+  owl:onProperty ns0:the_kind_of ;
+  owl:allValuesFrom ns0:Oligopoly .
+
+_:genid71
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom [
+    a owl:Class ;
+    owl:oneOf (
+     ns0:Economics
+     ns0:Macro_Economics
+     ns0:finance
+   )
+  ] .
+
+[]
+  a owl:NegativePropertyAssertion ;
+  owl:sourceIndividual ns0:Raghuram_Rajan ;
+  owl:assertionProperty ns0:has_been_awarded ;
+  owl:targetIndividual ns0:nobel_prize .
+
+_:genid81
+  a owl:Restriction ;
+  owl:onProperty ns0:has_been_awarded ;
+  owl:someValuesFrom ns0:Nobel_Prize .
+
+_:genid85
+  a owl:Restriction ;
+  owl:onProperty ns0:work_on ;
+  owl:someValuesFrom [
+    a owl:Class ;
+    owl:oneOf (
+     ns0:Economics
+     ns0:finance
+     ns0:psychology
+   )
+  ] .
+
+_:genid93
+  a owl:Restriction ;
+  owl:onProperty ns0:the_kind_of ;
+  owl:allValuesFrom ns0:Perfect_Market .
+
+_:genid97
+  a owl:Restriction ;
+  owl:onProperty ns0:sold_by ;
+  owl:someValuesFrom [
+    a owl:Class ;
+    owl:oneOf ( ns0:vendors )
+  ] .
+
+_:genid107
+  a owl:Restriction ;
+  owl:onProperty ns0:sold_by ;
+  owl:allValuesFrom [
+    a owl:Class ;
+    owl:oneOf ( ns0:indian_government )
+  ] .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Adam_Smith
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Daniel_Kahneman
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:David_Ricardo
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Gita_Gopinath
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:John_Maynard_Keynes
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Kuwait
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Raghuram_Rajan
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Abhijit_Banerjee
+   ns0:Richard_Thaler
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Adam_Smith
+   ns0:David_Ricardo
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Adam_Smith
+   ns0:Raghuram_Rajan
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Daniel_Kahneman
+   ns0:Raghuram_Rajan
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Daniel_Kahneman
+   ns0:Richard_Thaler
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Gita_Gopinath
+   ns0:Raghuram_Rajan
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Gita_Gopinath
+   ns0:Richard_Thaler
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:John_Maynard_Keynes
+   ns0:Raghuram_Rajan
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:John_Maynard_Keynes
+   ns0:Richard_Thaler
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Loan_Rate_Granted_by_Bank
+   ns0:import_and_export_taxes
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:OPEC
+   ns0:food_market
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:OPEC
+   ns0:indian_railways
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Pounds
+   ns0:indian_rupees
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:Raghuram_Rajan
+   ns0:Richard_Thaler
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:clothing
+   ns0:farming_food
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:clothing
+   ns0:travelling
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:consumer
+   ns0:import_and_export_taxes
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:food_market
+   ns0:indian_railways
+ ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+   ns0:indian_rupees
+   ns0:taka
+ ) .

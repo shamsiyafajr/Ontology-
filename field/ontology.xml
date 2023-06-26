@@ -1,0 +1,1954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oyinkansolaogunya/ontologies/2022/11/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/oyinkansolaogunya/ontologies/2022/11/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.EconomicField.com#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.EconomicField.com">
+        <rdfs:comment xml:lang="en">This is an Intelligent Tutoring System based on the Field of Economics Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.EconomicField.com#only -->
+
+    <owl:AnnotationProperty rdf:about="http://www.EconomicField.com#only"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.EconomicField.com#a_type_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#a_type_of"/>
+    
+
+
+    <!-- http://www.EconomicField.com#as -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#as">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#belongs_to"/>
+    
+
+
+    <!-- http://www.EconomicField.com#branches_of_economics -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#branches_of_economics">
+        <owl:equivalentProperty rdf:resource="http://www.EconomicField.com#is_a_branch_of"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.EconomicField.com#branches_of_economics"/>
+        <owl:inverseOf rdf:resource="http://www.EconomicField.com#is_a_branch_of"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Economic"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Economics_of_nation"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Economics_of_nation"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#changed_the_theory -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#changed_the_theory"/>
+    
+
+
+    <!-- http://www.EconomicField.com#conducts -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#conducts"/>
+    
+
+
+    <!-- http://www.EconomicField.com#controlled_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#controlled_by"/>
+    
+
+
+    <!-- http://www.EconomicField.com#exchanged_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#exchanged_at"/>
+    
+
+
+    <!-- http://www.EconomicField.com#factors -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#factors"/>
+    
+
+
+    <!-- http://www.EconomicField.com#has_been_awarded -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#has_been_awarded"/>
+    
+
+
+    <!-- http://www.EconomicField.com#has_been_awarded_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#has_been_awarded_to"/>
+    
+
+
+    <!-- http://www.EconomicField.com#has_not_been_awarded -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#has_not_been_awarded">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#he_was_a_believer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#he_was_a_believer_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#he_was_born -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#he_was_born">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#he_was_born_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#he_was_born_in"/>
+    
+
+
+    <!-- http://www.EconomicField.com#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#includes">
+        <owl:equivalentProperty rdf:resource="http://www.EconomicField.com#sold_by"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.EconomicField.com#sells"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Market"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Producers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#is_a_branch_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#is_a_branch_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Economics_of_nation"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Economics_of_nation"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+        <rdfs:range rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#is_an_example_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#is_an_example_of"/>
+    
+
+
+    <!-- http://www.EconomicField.com#is_indicated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#is_indicated_by"/>
+    
+
+
+    <!-- http://www.EconomicField.com#is_of_origin -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#is_of_origin"/>
+    
+
+
+    <!-- http://www.EconomicField.com#issued_excess -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#issued_excess">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#managed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#managed_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#managed_through -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#managed_through"/>
+    
+
+
+    <!-- http://www.EconomicField.com#number_of_producers -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#number_of_producers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#propagated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#propagated_by"/>
+    
+
+
+    <!-- http://www.EconomicField.com#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#regulates"/>
+    
+
+
+    <!-- http://www.EconomicField.com#returns -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#returns"/>
+    
+
+
+    <!-- http://www.EconomicField.com#returns_on_factor -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#returns_on_factor"/>
+    
+
+
+    <!-- http://www.EconomicField.com#sells -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#sells"/>
+    
+
+
+    <!-- http://www.EconomicField.com#sold_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#sold_by"/>
+    
+
+
+    <!-- http://www.EconomicField.com#the_kind_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#the_kind_of"/>
+    
+
+
+    <!-- http://www.EconomicField.com#type_of_economist_was -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#type_of_economist_was"/>
+    
+
+
+    <!-- http://www.EconomicField.com#which_eradicated -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#which_eradicated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#work_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.EconomicField.com#work_on">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.EconomicField.com#IMF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#IMF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#Noble_Prize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#Noble_Prize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Award"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#Pounds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#Pounds">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#RBI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#RBI">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Central_Bank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#WTO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#WTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#World_Bank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#World_Bank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#clothing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#clothing">
+        <owl:equivalentProperty rdf:resource="http://www.EconomicField.com#farming_foods"/>
+        <owl:equivalentProperty rdf:resource="http://www.EconomicField.com#travelling"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#farming_foods -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#farming_foods">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#indian_rupees -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#indian_rupees">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.EconomicField.com#travelling -->
+
+    <owl:DatatypeProperty rdf:about="http://www.EconomicField.com#travelling">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.EconomicField.com#Award -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Award"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Behavioural_Economist -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Behavioural_Economist">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#British -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#British">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Taught_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Capital -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Capital">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Factors_of_Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Central_Bank -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Central_Bank">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Organisations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Classicals -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Classicals">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Consumers -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Consumers">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economic_Groups"/>
+        <owl:disjointWith rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+        <owl:disjointWith rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+        <owl:disjointWith rdf:resource="http://www.EconomicField.com#Producers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Country -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Country"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Definition -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Definition">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Inflation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Economic -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Economic"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Economic_Groups -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Economic_Groups">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Economics_of_nation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Economics_of_nation">
+        <owl:equivalentClass rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Economist -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Economist"/>
+    
+
+
+    <!-- http://www.EconomicField.com#England -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#England">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Enterpreneurship -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Enterpreneurship">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Factors_of_Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Experimental -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Experimental">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#economics"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#social_experiments"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Factors_of_Production -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Factors_of_Production">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Micro_Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Finance -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Finance">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Financial -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Financial">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#Finance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#economics"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Fiscal_Policy -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Fiscal_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Policies_of_economic"/>
+        <owl:disjointWith rdf:resource="http://www.EconomicField.com#Monetary_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Government_Expenditure -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Government_Expenditure">
+        <owl:equivalentClass rdf:resource="http://www.EconomicField.com#Taxation"/>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Fiscal_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#IMF -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#IMF">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Indian_Economist -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Indian_Economist">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Inflation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Inflation">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Issues"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#International_Organisation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#International_Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Organisations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Issues -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Issues">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Keynesians -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Keynesians">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Labour -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Labour">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Factors_of_Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Labour_Services -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Labour_Services">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Consumers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Land -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Land">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Factors_of_Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Legal_Tenders -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Legal_Tenders">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Producers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Macro_Economic -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Macro_Economic">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Market -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Market"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Meaning -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Meaning">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Unemployment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Micro_Economic -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Micro_Economic">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Monetary_Policy -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Monetary_Policy">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Policies_of_economic"/>
+        <owl:disjointWith rdf:resource="http://www.EconomicField.com#trade_policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Money_Supply -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Money_Supply">
+        <owl:equivalentClass rdf:resource="http://www.EconomicField.com#Rate_of_interest"/>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Monetary_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Monopolistic_Competition -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Monopolistic_Competition">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Monopoly -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Monopoly">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Monopsony -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Monopsony">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Nobel_Prize -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Nobel_Prize">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Award"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Oligopoly -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Oligopoly">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Organisations -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Organisations"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Pay_Taxes -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Pay_Taxes">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Consumers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Perfect_Market -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Perfect_Market">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Market"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Policies_of_economic -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Policies_of_economic"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Political_British -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Political_British">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Taught_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Produce_goods_and_services -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Produce_goods_and_services">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Producers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Producers -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Producers">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Economic_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Psychology -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Psychology">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Rate_of_interest -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Rate_of_interest">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Monetary_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Scottish -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Scottish">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Taught_course -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Taught_course"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Taxation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Taxation">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Fiscal_Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Types_of_Unemployment -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Types_of_Unemployment">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Unemployment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Types_of_inflation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Types_of_inflation">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Inflation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Unemployment -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Unemployment">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Issues"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Venezuela -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Venezuela">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#Works -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#Works"/>
+    
+
+
+    <!-- http://www.EconomicField.com#World_Trade_Organisation -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#World_Trade_Organisation">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#currency_restriction -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#currency_restriction">
+        <owl:equivalentClass rdf:resource="http://www.EconomicField.com#exchange_rate"/>
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#trade_policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#economics -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#economics">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#exchange_rate -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#exchange_rate">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#trade_policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#india -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#india">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#indian_american -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#indian_american">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#iran -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#iran">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#iraq -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#iraq">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#saudi_arabia -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#saudi_arabia">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#social_experiments -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#social_experiments">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#trade_policy -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#trade_policy">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#Policies_of_economic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.EconomicField.com#world_bank -->
+
+    <owl:Class rdf:about="http://www.EconomicField.com#world_bank">
+        <rdfs:subClassOf rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.EconomicField.com#Abhijit_Banerjee -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Abhijit_Banerjee">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Experimental"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#Economic"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#is_of_origin"/>
+                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#india"/>
+            </owl:Restriction>
+        </rdf:type>
+        <www:is_of_origin rdf:resource="http://www.EconomicField.com#india"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Economics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Adam_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Adam_Smith">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Classicals"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Bank_of_England -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Bank_of_England">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Inflation"/>
+        <owl:sameAs rdf:resource="http://www.EconomicField.com#banknote"/>
+        <www:issued_excess rdf:resource="http://www.EconomicField.com#banknote"/>
+        <www:which_eradicated rdf:resource="http://www.EconomicField.com#inflation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#British -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#British"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Daniel_Kahneman -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Daniel_Kahneman"/>
+    
+
+
+    <!-- http://www.EconomicField.com#David_Ricardo -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#David_Ricardo">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Classicals"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economist"/>
+        <owl:sameAs rdf:resource="http://www.EconomicField.com#England"/>
+        <www:he_was_a_believer_of rdf:resource="http://www.EconomicField.com#monetarism"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Economics -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Economics"/>
+    
+
+
+    <!-- http://www.EconomicField.com#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#England">
+        <owl:sameAs rdf:resource="http://www.EconomicField.com#John_Maynard_Keynes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Exchange_rates_modification -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Exchange_rates_modification">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Policies_of_economic"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#exchange_rate"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.EconomicField.com#a_type_of"/>
+                                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#currency_restriction"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#is_an_example_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#Policies_of_economic"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#a_type_of"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#currency_restriction"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#controlled_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#managed_by"/>
+                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#managed_through"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Exchange_rates_modification"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <www:a_type_of rdf:resource="http://www.EconomicField.com#currency_restriction"/>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#imf"/>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#world_bank"/>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#world_trade_organisation"/>
+        <www:is_an_example_of rdf:resource="http://www.EconomicField.com#policies_of_economic"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#imf"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#world_bank"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#world_trade_organisation"/>
+        <www:managed_through rdf:resource="http://www.EconomicField.com#Exchange_rates_modification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Gita_Gopinath -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Gita_Gopinath">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economist"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Financial"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#has_not_been_awarded"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#Nobel_Prize"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#Macro_Economics"/>
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#international_finance"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <www:has_not_been_awarded rdf:resource="http://www.EconomicField.com#nobel_prize"/>
+        <www:is_of_origin rdf:resource="http://www.EconomicField.com#Indian_American"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Macro_Economics"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#international_finance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Indian_American -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Indian_American"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Iran -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Iran">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Iraq -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Iraq">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#John_Maynard_Keynes -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#John_Maynard_Keynes">
+        <rdf:type rdf:resource="http://www.EconomicField.com#British"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economist"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#England"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Keynesians"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#has_not_been_awarded"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#Nobel_Prize"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#Economics"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#he_was_born_in"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#England"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#type_of_economist_was"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#British"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <www:changed_the_theory rdf:resource="http://www.EconomicField.com#Macro_Economics"/>
+        <www:changed_the_theory rdf:resource="http://www.EconomicField.com#policies_of_economic"/>
+        <www:has_not_been_awarded rdf:resource="http://www.EconomicField.com#nobel_prize"/>
+        <www:he_was_born_in rdf:resource="http://www.EconomicField.com#England"/>
+        <www:type_of_economist_was rdf:resource="http://www.EconomicField.com#British"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Economics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Kuwait -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Kuwait"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Loan_Rate_Granted_by_Bank -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Loan_Rate_Granted_by_Bank"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Macro_Economics -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Macro_Economics">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economics_of_nation"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Macro_Economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#OPEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#OPEC">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Oligopoly"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Market"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#the_kind_of"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#Oligopoly"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#sold_by"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Iran"/>
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Iraq"/>
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Qatar"/>
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Saudi_Arabia"/>
+                            <rdf:Description rdf:about="http://www.EconomicField.com#Venezuela"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#the_kind_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#Oligopoly"/>
+            </owl:Restriction>
+        </rdf:type>
+        <www:includes rdf:resource="http://www.EconomicField.com#Iran"/>
+        <www:includes rdf:resource="http://www.EconomicField.com#Iraq"/>
+        <www:includes rdf:resource="http://www.EconomicField.com#Qatar"/>
+        <www:includes rdf:resource="http://www.EconomicField.com#Saudi_Arabia"/>
+        <www:includes rdf:resource="http://www.EconomicField.com#Venezuela"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#Iran"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#Iraq"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#Qatar"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#Saudi_Arabia"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#Venezuela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Political_British -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Political_British"/>
+    
+
+
+    <!-- http://www.EconomicField.com#Pounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Pounds">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Qatar -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Qatar">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#RBI -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#RBI">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Central_Bank"/>
+        <www:IMF rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:IMF>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Raghuram_Rajan -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Raghuram_Rajan">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Economist"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Financial"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Indian_Economist"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#Economics"/>
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#Macro_Economics"/>
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#finance"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#is_of_origin"/>
+                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#india"/>
+            </owl:Restriction>
+        </rdf:type>
+        <www:is_of_origin rdf:resource="http://www.EconomicField.com#india"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Economics"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Macro_Economics"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#finance"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.EconomicField.com#Raghuram_Rajan"/>
+        <owl:assertionProperty rdf:resource="http://www.EconomicField.com#has_been_awarded"/>
+        <owl:targetIndividual rdf:resource="http://www.EconomicField.com#nobel_prize"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.EconomicField.com#Richard_Thaler -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Richard_Thaler">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Behavioural_Economist"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Financial"/>
+        <rdf:type rdf:resource="http://www.EconomicField.com#Nobel_Prize"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#has_been_awarded"/>
+                        <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#Nobel_Prize"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Economist"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#work_on"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#Economics"/>
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#finance"/>
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#psychology"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <www:has_been_awarded rdf:resource="http://www.EconomicField.com#nobel_prize"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#Economics"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#finance"/>
+        <www:work_on rdf:resource="http://www.EconomicField.com#psychology"/>
+        <www:Noble_Prize rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:Noble_Prize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Saudi_Arabia -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Saudi_Arabia">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#Venezuela -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#Venezuela">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#William_Blake -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#William_Blake">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Classicals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#banknote -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#banknote"/>
+    
+
+
+    <!-- http://www.EconomicField.com#clothing -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#clothing">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+        <www:clothing rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:clothing>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#consumer -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#consumer">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Consumers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#currency_restriction -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#currency_restriction"/>
+    
+
+
+    <!-- http://www.EconomicField.com#farming_food -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#farming_food">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#finance"/>
+    
+
+
+    <!-- http://www.EconomicField.com#food_market -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#food_market">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Perfect_Market"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Market"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#the_kind_of"/>
+                        <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#Perfect_Market"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Perfect_Market"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#sold_by"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#vendors"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <www:includes rdf:resource="http://www.EconomicField.com#vendors"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#vendors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#imf -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#imf">
+        <rdf:type rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <www:IMF rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:IMF>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#import_and_export_taxes -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#import_and_export_taxes">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#controlled_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#managed_through"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.EconomicField.com#import_and_export_taxes"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#imf"/>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#world_bank"/>
+        <www:controlled_by rdf:resource="http://www.EconomicField.com#world_trade_organisation"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#imf"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#world_bank"/>
+        <www:managed_by rdf:resource="http://www.EconomicField.com#world_trade_organisation"/>
+        <www:managed_through rdf:resource="http://www.EconomicField.com#import_and_export_taxes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#india -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#india"/>
+    
+
+
+    <!-- http://www.EconomicField.com#indian_government -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#indian_government"/>
+    
+
+
+    <!-- http://www.EconomicField.com#indian_railways -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#indian_railways">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Monopoly"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.EconomicField.com#Monopoly"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.EconomicField.com#sold_by"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.EconomicField.com#indian_government"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.EconomicField.com#the_kind_of"/>
+                <owl:allValuesFrom rdf:resource="http://www.EconomicField.com#Monopoly"/>
+            </owl:Restriction>
+        </rdf:type>
+        <www:includes rdf:resource="http://www.EconomicField.com#indian_government"/>
+        <www:sold_by rdf:resource="http://www.EconomicField.com#indian_government"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#indian_rupees -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#indian_rupees">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#inflation -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#inflation"/>
+    
+
+
+    <!-- http://www.EconomicField.com#international_finance -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#international_finance"/>
+    
+
+
+    <!-- http://www.EconomicField.com#monetarism -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#monetarism"/>
+    
+
+
+    <!-- http://www.EconomicField.com#nobel_prize -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#nobel_prize"/>
+    
+
+
+    <!-- http://www.EconomicField.com#policies_of_economic -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#policies_of_economic"/>
+    
+
+
+    <!-- http://www.EconomicField.com#psychology -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#psychology"/>
+    
+
+
+    <!-- http://www.EconomicField.com#taka -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#taka">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Legal_Tenders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#travelling -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#travelling">
+        <rdf:type rdf:resource="http://www.EconomicField.com#Produce_goods_and_services"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#vendors -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#vendors"/>
+    
+
+
+    <!-- http://www.EconomicField.com#world_bank -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#world_bank">
+        <rdf:type rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <www:World_Bank rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:World_Bank>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.EconomicField.com#world_trade_organisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.EconomicField.com#world_trade_organisation">
+        <rdf:type rdf:resource="http://www.EconomicField.com#International_Organisation"/>
+        <www:WTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></www:WTO>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Adam_Smith"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Daniel_Kahneman"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#David_Ricardo"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Gita_Gopinath"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#John_Maynard_Keynes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Kuwait"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Abhijit_Banerjee"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Richard_Thaler"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Adam_Smith"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#David_Ricardo"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Adam_Smith"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Daniel_Kahneman"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Daniel_Kahneman"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Richard_Thaler"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Gita_Gopinath"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Gita_Gopinath"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Richard_Thaler"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#John_Maynard_Keynes"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#John_Maynard_Keynes"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Richard_Thaler"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Loan_Rate_Granted_by_Bank"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#import_and_export_taxes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#OPEC"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#food_market"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#OPEC"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#indian_railways"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Pounds"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#indian_rupees"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#Raghuram_Rajan"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#Richard_Thaler"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#clothing"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#farming_food"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#clothing"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#travelling"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#consumer"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#import_and_export_taxes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#food_market"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#indian_railways"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.EconomicField.com#indian_rupees"/>
+            <rdf:Description rdf:about="http://www.EconomicField.com#taka"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+

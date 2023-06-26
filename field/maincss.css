@@ -1,0 +1,135 @@
+body{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:url(images/gdnlogo2.png);
+    background-position: absolute;
+    background-size:100% 100%;
+}
+
+.topsection{
+    display: grid;
+    place-items: center;
+    background-color: rgba(3, 8, 39, 0.753);
+    color: azure;
+}
+
+.toptable td{
+    font-style: italic;
+    font-size: 40px;
+    cursor:pointer;
+    height: 150px;
+    width: 250px;
+    text-align: center;
+    color:rgb(156, 228, 233);
+}
+
+#chapters{
+    display: flex;
+}
+
+#chapters td{
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    color:rgb(156, 228, 233);
+}
+
+#chapters select{
+    width: 100px;
+}
+
+#logo{
+    background-image: url(images/imagedark.png);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.contentholder {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#leftmenuhome,
+#leftmenuenrol,
+#leftmenustudent,
+#leftmenuadmin {
+    height: 90px;
+    width: 10%;
+    cursor: pointer;
+    background-color: rgba(3, 8, 39, 0.911);
+    color: azure;
+}
+
+#logouttab, #starttesttab{
+    width: 10%;
+    height: 10%;
+    background-color: rgba(3, 8, 39, 0.911);
+    color: azure;
+}
+
+.feedbackpane{
+    width: 20%;
+    background-color: rgba(5, 5, 61, 0.918);
+    color: azure;
+    vertical-align: top;
+}
+
+.maincontent {
+    background-color: rgba(3, 8, 39, 0.884);
+    color: azure;
+}
+
+#aboutfooter {
+    background-color: black;
+    color: aliceblue;
+    display: grid;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+}
+
+#chapter-1-notes,
+#chapter-2-notes,
+#chapter-3-notes,
+#chapter-4-notes,
+#chapter-5-notes,
+#chapter-6-notes{
+    display: none;
+    text-align: left;
+}
+
+#chapter-1-test,
+#chapter-2-test,
+#chapter-3-test,
+#chapter-4-test,
+#chapter-5-test,
+#chapter-6-test{
+    display: none;
+    text-align: left;
+}
+
+#test-table{
+    width:100%;
+}
+#question {
+    text-align: left;
+}
+#answer {
+    text-align: center;
+}
+
+#submitanswer{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: rgba(3, 8, 39, 0.911);
+    color: azure;
+}
+#scorelabel{
+    text-align: center;
+}
